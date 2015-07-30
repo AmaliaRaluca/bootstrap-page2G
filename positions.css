@@ -1,0 +1,46 @@
+header {
+    padding-top: 50px;
+}
+#content {
+    padding-top: 150px;
+}
+.image{
+    padding-top: 50px;
+    width: 100%;
+}
+.column{
+    padding-right:8%;
+    margin-bottom: 50px;
+}
+h3{
+    margin-top: 120px ;
+}
+h1{
+    padding-bottom: 60px;
+}
+.gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.down{
+    margin-bottom: 10px;
+}
+.left{
+    margin-right: 0;
+}
+.top{
+    margin-top: 20px;
+}
+.input{
+    margin-bottom: 20px;
+}
+#contact{
+    margin-bottom: 20px;
+}
+#contact{
+    padding-top: 40px;
+}
+.footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

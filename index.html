@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <title>Day 4 Bootstrap</title>
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link rel = "stylesheet" type ="text/css"  href = "positions.css">
+    <link rel = "stylesheet" type ="text/css"  href = "design.css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class = "bg-stripes">
+
+    <div class="container">
+    John R. Doe / Designer & Developer
+        <img src="images/links.jpg" alt = "links images" align="right">
+        <img src="images/trafic.jpg" alt = "top image"  class="image img-responsive">
+        <div class="border" style="border: 1px solid #ccc; width: 98%; height: 470px; position: relative; margin-left: 1%; top: -480px;">
+<!-- Border Over Image-->
+        </div>
+    </div>
+</header>
+
+<div id = "content" class = "bg-gradient">
+    <div class="container">
+        <h3>
+           &#126; Welcome to my portofolio  &#126;
+        </h3>
+        <h1>
+            “I make beautiful things happen”
+        </h1>
+<!--Content 3 Section -->
+        <div class = "row">
+            <div class="col-sm-4 column">
+                <h4>
+                    <img src ="images/about.jpg" alt="about-me-image">
+                    A little about me...
+                </h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+            </div>
+            <div class="col-sm-4 column">
+                <h4>
+                    <img src ="images/good.jpg" alt="good-at-image">
+                    I'm really good at...
+
+                </h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+            </div>
+            <div class="col-sm-4 column">
+                <h4>
+                    <img src ="images/service.jpg" alt="service-provide-image">
+                    Services I provide...
+
+                </h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id = "gallery" class = "bg-stripes">
+    <div class="container">
+        <div class = "row">
+            <div class="col-sm-6 gallery">
+                <!-- First Row-->
+                <div class = "row down">
+                    <div class="col-sm-6">
+                        <img src="images/1.jpg" alt="1-image" class="img-thumbnail img-responsive">
+                    </div>
+                    <div class="col-sm-6 left">
+                        <img src="images/2.jpg" alt="2-image" class="img-thumbnail img-responsive">
+                    </div>
+                </div>
+                <!-- Second Row-->
+                <div class = "row down">
+                    <div class="col-sm-6">
+                        <img src="images/3.jpg" alt="3-image" class="img-thumbnail img-responsive">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/4.jpg" alt="4-image" class="img-thumbnail img-responsive">
+                    </div>
+                </div>
+                <!-- Thrid Row-->
+                <div class = "row">
+                    <div class="col-sm-6">
+                        <img src="images/5.jpg" alt="5-image" class="img-thumbnail img-responsive">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/6.jpg" alt="6-image" class="img-thumbnail img-responsive">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 gallery">
+                <img src="images/7.jpg" alt="7-image" class="img-thumbnail img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+<div id ="contact" class = "bg-gradient">
+    <div class = "container">
+        <div class="row top">
+            <div class = "col-sm-6">
+                <form>
+            <!-- Name-->
+                    <div  class="input-group input">
+                        <span class="input-group-addon input"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control input" id="InputName" placeholder="Enter your name">
+                    </div>
+            <!--Email Address -->
+                    <div  class="input-group input">
+                        <span class="input-group-addon input"><i class="fa fa-envelope"></i></span>
+                        <input type="email" class="form-control input" id = "InputEmail" placeholder= "Enter your email address">
+                    </div>
+            <!-- Url-->
+                    <div  class="input-group input">
+                        <span class="input-group-addon input"><i class="fa fa-globe"></i></span>
+                        <input type="url" class="form-control input" id = "InputUrl" placeholder=" Enter your website URL">
+                    </div>
+            <!--Text Area -->
+                    <textarea class="form-control input" rows="6"></textarea>
+                    <button class="btn input" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class = "col-sm-6 ">
+                <div class = "row">
+                    <div class = "col-sm-5">
+                         <img src="images/photo.jpg" alt="portret photo" class = "thumbnail img-responsive">
+                    </div>
+                    <div class = "col-sm-7 p">
+                        <h5>
+                            John Doe / Designer & Developer
+                        </h5>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ligula diam. Donec a nibh sit amet justo posuere convallis. Curabitur suscipit consectetur nisl, vel mattis sem tempor quis. Aenean enim lectus, aliquet sed dignissim vel, laoreet et justo. Nulla turpis nulla, dapibus in porttitor sit amet, luctus ac erat.
+                    </div>
+                </div>
+                <div class = "col-sm-12 final">
+                    Contact me: 123.456.789
+                    <br>
+                    Email me: <span style ="color: #000;">johndoe@gmail.com</span>
+                    <br><br>
+                    Follow me: <span style ="color: #000;">Twitter   /   Facebook   /   Dribbble   /   Flickr </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = "footer">
+    <div class = "container footer">
+        <div class = "col-sm-6">
+            Copyright © 2015 John Doe. All rights reserved.
+        </div>
+        <div class = "col-sm-2 col-sm-offset-4">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-vimeo"></i>
+            <i class="fa fa-behance"></i>
+            <i class="fa fa-dribbble"></i>
+        </div>
+
+
+    </div>
+</div>
+
+<script src = "js/jquery.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+</body>
+</html>
