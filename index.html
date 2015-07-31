@@ -18,7 +18,7 @@
     John R. Doe / Designer & Developer
         <img src="images/links.jpg" alt = "links images" align="right">
         <img src="images/trafic.jpg" alt = "top image"  class="image img-responsive">
-        <div class="border" style="border: 1px solid #ccc; width: 98%; height: 470px; position: relative; margin-left: 1%; top: -480px;">
+        <div class="border">
 <!-- Border Over Image-->
         </div>
     </div>
@@ -105,26 +105,35 @@
     <div class = "container">
         <div class="row top">
             <div class = "col-sm-6">
-                <form>
+                <!--<form>-->
             <!-- Name-->
-                    <div  class="input-group input">
-                        <span class="input-group-addon input"><i class="fa fa-user"></i></span>
-                        <input type="text" class="form-control input" id="InputName" placeholder="Enter your name">
-                    </div>
+                    <!--<div  class="input-group input">-->
+                        <!--<span class="input-group-addon input"><i class="fa fa-user"></i></span>-->
+                        <!--<input type="text" class="form-control input" id="InputName" placeholder="Enter your name">-->
+                    <!--</div>-->
             <!--Email Address -->
-                    <div  class="input-group input">
-                        <span class="input-group-addon input"><i class="fa fa-envelope"></i></span>
-                        <input type="email" class="form-control input" id = "InputEmail" placeholder= "Enter your email address">
-                    </div>
+                    <!--<div  class="input-group input">-->
+                        <!--<span class="input-group-addon input"><i class="fa fa-envelope"></i></span>-->
+                        <!--<input type="email" class="form-control input" id = "InputEmail" placeholder= "Enter your email address">-->
+                    <!--</div>-->
             <!-- Url-->
-                    <div  class="input-group input">
-                        <span class="input-group-addon input"><i class="fa fa-globe"></i></span>
-                        <input type="url" class="form-control input" id = "InputUrl" placeholder=" Enter your website URL">
-                    </div>
+                    <!--<div  class="input-group input">-->
+                        <!--<span class="input-group-addon input"><i class="fa fa-globe"></i></span>-->
+                        <!--<input type="url" class="form-control input" id = "InputUrl" placeholder=" Enter your website URL">-->
+                    <!--</div>-->
             <!--Text Area -->
-                    <textarea class="form-control input" rows="6"></textarea>
-                    <button class="btn input" type="submit">Submit</button>
+                    <!--<textarea class="form-control input" rows="6"></textarea>-->
+                    <!--<button class="btn input" type="submit">Submit</button>-->
+                <!--</form>-->
+
+                <form action="#" method="get" id="form">
+                    <input class="frame name" type="text"name="name" placeholder="Enter your name">
+                    <input class="frame email" type="email" name="email" placeholder="Enter your email address">
+                    <input class="frame website" type="url" name="website" placeholder="Enter your website url">
+                    <textarea class="frame" name="comment" form="form" rows="30"></textarea>
+                    <input class="btn frame" type="submit" value="Submit">
                 </form>
+
             </div>
             <div class = "col-sm-6 ">
                 <div class = "row">
