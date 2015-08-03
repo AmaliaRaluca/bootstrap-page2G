@@ -1,0 +1,154 @@
+
+/*CSS FILE FOR PRINT*/
+
+body{
+    font-family: "Times New Roman";
+    width: 100%;
+    margin: 0;
+    float: none;
+}
+header{
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+    height: 385px;
+}
+#content{
+    color: #000;
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+    text-align: center;
+}
+h4{
+    font-size: 16px;
+}
+h5{
+    font-size: 14px;
+}
+.column{
+    font-size: 12px;
+}
+.p{
+    font-size: 12px;
+    text-indent: 2em;
+}
+.fa{
+    padding: 0;
+}
+
+#one img,
+#two img,
+#three img,
+#four img,
+#five img,
+#six img,
+#seven img
+{
+    display: none;
+}
+
+#one img,
+#two img,
+#three img,
+#four img,
+#five img,
+#six img,
+#seven img
+{
+float: left;
+}
+#one:after {
+    content: url('images/one.jpg');
+}
+
+#two:after {
+    content: url('images/two.jpg');
+}
+
+#three:after {
+    content: url('images/three.jpg');
+}
+
+#four:after {
+    content: url('images/four.jpg');
+}
+
+#five:after {
+    content: url('images/five.jpg');
+}
+
+#six:after {
+    content: url('images/six.jpg');
+}
+#seven:after {
+    content: url('images/girl.jpg');
+}
+
+/*POSITIONS*/
+
+header {
+    padding-top: 0;
+}
+#content {
+    padding-top: 0;
+}
+.image{
+    padding-top: 30px;
+    width: 100%;
+}
+h3{
+    margin: 0;
+}
+h1{
+    padding: 0;
+}
+.column{
+    padding: 0;
+    margin: 0;
+}
+#gallery {
+    display: inline-block;
+}
+.row{
+    margin: 0;
+}
+.top{
+    margin: 0;
+}
+#form{
+    display:none;
+}
+.footer{
+    padding: 0;
+}
+.icons{
+    display:none;
+}
+.icons-top{
+    display:none;
+}
+.block{
+    display: inline-block;
+}
+.l{
+    align-items: left;
+}
+.p{
+    text-align: left;
+}
+
+.gallery .col-sm-6, .gallery  {
+    width: 50%;
+    padding: 0;
+    float: left;
+}
+.contact .col-sm-6, .contact {
+    width: 50%;
+    padding: 0;
+    float: left;
+}

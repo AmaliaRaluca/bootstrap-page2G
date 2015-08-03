@@ -5,18 +5,34 @@
     <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
     <title>Day 4 Bootstrap</title>
     <link href = "css/bootstrap.min.css" rel = "stylesheet">
-    <link rel = "stylesheet" type ="text/css"  href = "positions.css">
-    <link rel = "stylesheet" type ="text/css"  href = "design.css">
+
+    <link rel = "stylesheet" type ="text/css"  href = "positions.css" media="screen">
+    <link rel = "stylesheet" type ="text/css"  href = "design.css" media="screen">
+
+    <link rel = "stylesheet" type ="text/css"  href = "design-print.css" media="print">
+
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 <header class = "bg-stripes">
 
     <div class="container">
-    John R. Doe / Designer & Developer
-        <img src="images/links.jpg" alt = "links images" align="right">
+        <div class="row">
+            <div class = "col-sm-6">
+                John R. Doe / Designer & Developer
+            </div>
+            <div class="col-sm-2 col-sm-offset-4 icons-top">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-vimeo"></i>
+                <i class="fa fa-behance"></i>
+                <i class="fa fa-dribbble"></i>
+            </div>
+        </div>
         <img src="images/trafic.jpg" alt = "top image"  class="image img-responsive">
         <div class="border">
 <!-- Border Over Image-->
@@ -68,34 +84,34 @@
             <div class="col-sm-6 gallery">
                 <!-- First Row-->
                 <div class = "row down">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id = "one">
                         <img src="images/1.jpg" alt="1-image" class="img-thumbnail img-responsive">
                     </div>
-                    <div class="col-sm-6 left">
+                    <div class="col-sm-6" id ="two">
                         <img src="images/2.jpg" alt="2-image" class="img-thumbnail img-responsive">
                     </div>
                 </div>
                 <!-- Second Row-->
                 <div class = "row down">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id = "three">
                         <img src="images/3.jpg" alt="3-image" class="img-thumbnail img-responsive">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id = "four">
                         <img src="images/4.jpg" alt="4-image" class="img-thumbnail img-responsive">
                     </div>
                 </div>
                 <!-- Thrid Row-->
                 <div class = "row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" id = "five">
                         <img src="images/5.jpg" alt="5-image" class="img-thumbnail img-responsive">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6"  id = "six">
                         <img src="images/6.jpg" alt="6-image" class="img-thumbnail img-responsive">
                     </div>
                 </div>
 
             </div>
-            <div class="col-sm-6 gallery">
+            <div class="col-sm-6 gallery" id = "seven">
                 <img src="images/7.jpg" alt="7-image" class="img-thumbnail img-responsive">
             </div>
         </div>
@@ -105,42 +121,22 @@
     <div class = "container">
         <div class="row top">
             <div class = "col-sm-6">
-                <!--<form>-->
-            <!-- Name-->
-                    <!--<div  class="input-group input">-->
-                        <!--<span class="input-group-addon input"><i class="fa fa-user"></i></span>-->
-                        <!--<input type="text" class="form-control input" id="InputName" placeholder="Enter your name">-->
-                    <!--</div>-->
-            <!--Email Address -->
-                    <!--<div  class="input-group input">-->
-                        <!--<span class="input-group-addon input"><i class="fa fa-envelope"></i></span>-->
-                        <!--<input type="email" class="form-control input" id = "InputEmail" placeholder= "Enter your email address">-->
-                    <!--</div>-->
-            <!-- Url-->
-                    <!--<div  class="input-group input">-->
-                        <!--<span class="input-group-addon input"><i class="fa fa-globe"></i></span>-->
-                        <!--<input type="url" class="form-control input" id = "InputUrl" placeholder=" Enter your website URL">-->
-                    <!--</div>-->
-            <!--Text Area -->
-                    <!--<textarea class="form-control input" rows="6"></textarea>-->
-                    <!--<button class="btn input" type="submit">Submit</button>-->
-                <!--</form>-->
 
                 <form action="#" method="get" id="form">
                     <input class="frame name" type="text"name="name" placeholder="Enter your name">
                     <input class="frame email" type="email" name="email" placeholder="Enter your email address">
                     <input class="frame website" type="url" name="website" placeholder="Enter your website url">
-                    <textarea class="frame" name="comment" form="form" rows="30"></textarea>
-                    <input class="btn frame" type="submit" value="Submit">
+                    <textarea class="frame" name="comment" form="form" rows="30" cols="40"></textarea>
+                    <input class="btn frame" type="submit" value="Submit" onclick = "myFunction()">
                 </form>
 
             </div>
-            <div class = "col-sm-6 ">
+            <div class = "col-sm-6">
                 <div class = "row">
-                    <div class = "col-sm-5">
+                    <div class = "col-sm-5 contact">
                          <img src="images/photo.jpg" alt="portret photo" class = "thumbnail img-responsive">
                     </div>
-                    <div class = "col-sm-7 p">
+                    <div class = "col-sm-7 contact">
                         <h5>
                             John Doe / Designer & Developer
                         </h5>
@@ -164,17 +160,22 @@
         <div class = "col-sm-6">
             Copyright © 2015 John Doe. All rights reserved.
         </div>
-        <div class = "col-sm-2 col-sm-offset-4">
+        <div class = "col-sm-2 col-sm-offset-4 icons">
             <i class="fa fa-twitter"></i>
             <i class="fa fa-facebook"></i>
             <i class="fa fa-vimeo"></i>
             <i class="fa fa-behance"></i>
             <i class="fa fa-dribbble"></i>
         </div>
-
-
     </div>
 </div>
+
+<script>
+    function myFunction() {
+        document.getElementById("form").reset();
+    }
+</script>
+
 
 <script src = "js/jquery.js"></script>
 <script src = "js/bootstrap.min.js"></script>

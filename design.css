@@ -7,6 +7,9 @@ header{
     color: #444343;
     height: 385px;
 }
+.icons-top{
+    font-size: 12px;
+}
 .bg-stripes{
     background: url('images/background.jpg') repeat;
     border-bottom: 2px solid #fff;
@@ -33,11 +36,22 @@ header{
     position: relative;
     margin-left: 1%;
     top: -480px;
+    cursor: wait;
 }
 
 h1{
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
+    -webkit-transition: 4s ease-out; ;
+    -moz-transition:2s;
+    transition: 2s;
+}
+h1:hover{
+    /*color: #db7b56;*/
+    font-size: 60px;
+    color: #de7522;
+    cursor: pointer;
+    /*font-family: Tangerine;*/
 }
 h3{
     font-size: 24px;
@@ -55,6 +69,7 @@ h5{
 .p{
     padding-right: 9%;
     font-size: 14px;
+    cursor:auto;
 }
 /*.input{*/
     /*font-size: 16px;*/
@@ -139,4 +154,11 @@ textarea
 }
 .fa{
     padding-left: 15px;
+}
+.img-thumbnail:hover {
+    transform:scale(1.1,1.1);
+    transform-origin:center center;
+    transition: 2s;
+    position: relative;
+    z-index: +1;
 }
